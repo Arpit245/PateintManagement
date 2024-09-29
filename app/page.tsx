@@ -10,7 +10,7 @@ const Home = ({ searchParams }: SearchParamProps) => {
   return (
     <div className="flex h-screen max-h-screen">
       {isAdmin && <PasskeyModal />}
-
+    
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
           <Image
@@ -33,14 +33,6 @@ const Home = ({ searchParams }: SearchParamProps) => {
           </div>
         </div>
       </section>
-
-      <Image
-        src="/assets/images/onboarding-img.png"
-        height={800}
-        width={900}
-        alt="patient"
-        className="side-img max-w-[50%]"
-      />
     </div>
   );
 };
